@@ -50,7 +50,7 @@ return (
             ))}
             <div className="ribbon"></div>
           </div>
-          <div className="message">UNAS ROSAS QUE SE HARAN REALES PARA TI </div>
+          <div className="message">Eres mi chamaquita preciosa!!</div>
         </div>
       )}
     </div>
