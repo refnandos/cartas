@@ -1,0 +1,185 @@
+.proposal-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9f3f3;
+  flex-direction: column;
+}
+
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+label[htmlFor="pregunta"] {
+  font-size: 20px;
+  color: #e91e63;
+  margin-bottom: 20px;
+  display: block;
+  font-weight: bold;
+}
+
+.contenedorRadio {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contenedorRadio div {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Animación del ramo de rosas */
+.bouquet {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 100;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.roses-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.rose {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #e91e63;
+  border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+  transform: rotate(-45deg);
+  animation: float 3s ease-in-out infinite;
+}
+
+.rose:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 60px;
+  background-color: #4CAF50;
+  top: 35px;
+  left: 10px;
+  border-radius: 5px;
+}
+
+.rose:nth-child(1) {
+  top: 50px;
+  left: 50px;
+  animation-delay: 0s;
+}
+
+.rose:nth-child(2) {
+  top: 80px;
+  left: 120px;
+  animation-delay: 0.5s;
+}
+
+.rose:nth-child(3) {
+  top: 40px;
+  left: 190px;
+  animation-delay: 1s;
+}
+
+.rose:nth-child(4) {
+  top: 150px;
+  left: 70px;
+  animation-delay: 1.5s;
+}
+
+.rose:nth-child(5) {
+  top: 180px;
+  left: 140px;
+  animation-delay: 2s;
+}
+
+.rose:nth-child(6) {
+  top: 140px;
+  left: 210px;
+  animation-delay: 2.5s;
+}
+
+.ribbon {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  background-color: #ffeb3b;
+  bottom: 50px;
+  left: 50px;
+  border-radius: 5px;
+  transform: rotate(-5deg);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-45deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.message {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #e91e63;
+  font-weight: bold;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
