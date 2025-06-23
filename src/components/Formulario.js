@@ -2,10 +2,10 @@ import React from 'react'
 
 export const Formulario = () => {
 return (
-    <div>
+    <div className='contenedorFormulario'>
         <form>
-            <label htmlFor="pregunta">¿Cuál es tu opción favorita?</label>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
+            <label htmlFor="pregunta">¿quieres ser mi niña de los mechones rojos?</label>
+            <div className='contenedorRadio'>
                 <div>
                     <input type="radio" id="opcionSi" name="opcion" value="si" />
                     <label htmlFor="opcionSi">Sí</label>

@@ -3,13 +3,13 @@ import { Formulario } from './components/Formulario';
 
 function App() {
   return (
-    <div className="App">
+    <>
       
+        <div ClassName="contenedorPrincipal">
+          <Formulario />
 
-      <Formulario />
-
-      
-    </div>
+        </div>
+    </>
   );
 }
 
